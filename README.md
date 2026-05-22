@@ -1,3 +1,13 @@
-# PR Explorer Madeira – Clean V1.4
+# PR Explorer Madeira — V1.5
 
-Regionenfilter jetzt als Planungsregionen gebündelt: Zentrum, Rabaçal/Paul da Serra, Ribeiro Frio/Santana, Ostkap/Machico, westliche Steilküsten, Porto Santo. Statusfilter bleibt Einzelauswahl mit Ampellogik.
+Mobile-first PWA für private Madeira-PR-Planung.
+
+V1.5 Schwerpunkt:
+- Kartenruhe
+- weichere Bewegungen
+- kleinere, zoomabhängige Pins
+- organischere Overlays
+- immersiver Fullscreen-Modus
+- Service-Worker Cache v1.5
+
+Upload zu GitHub Pages: entpackten Inhalt hochladen, nicht die ZIP-Datei.
