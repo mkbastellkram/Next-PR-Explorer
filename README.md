@@ -1,10 +1,3 @@
-# PR Explorer Madeira – Clean V1.3
+# PR Explorer Madeira – Clean V1.4
 
-UX-Umbau nach Geory-Referenz:
-- Map-first ohne dauerhaft fixiertes PR-Sheet
-- schwebende Bottom-Navigation mit Auto-Hide und blauem Orb
-- Journal als PR-Liste
-- transparente Ansicht-/Filter-Overlays
-- Vollbildmodus mit Close-Button unter der Dynamic Island
-- Regionsfilter aus Master-Excel
-- manueller Ampelstatus je PR mit Statusfilter
+Regionenfilter jetzt als Planungsregionen gebündelt: Zentrum, Rabaçal/Paul da Serra, Ribeiro Frio/Santana, Ostkap/Machico, westliche Steilküsten, Porto Santo. Statusfilter bleibt Einzelauswahl mit Ampellogik.
