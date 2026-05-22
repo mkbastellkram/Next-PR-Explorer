@@ -1,13 +1,14 @@
-# PR Explorer Madeira – Clean V1.0
+# PR Explorer Madeira – Clean V1.1
 
-Sauberer Neuaufbau auf Basis der gelieferten Master-Excel, GPX-ZIP und KML-ZIP.
+Datengetriebene Mobile-First-PWA für private Madeira-PR-Wanderplanung.
 
-## Enthalten
+## Inhalt
 - 40 PR-Datensätze aus `PR – V1.xlsx`
-- 39 zugeordnete KML-Anfahrtsrouten
-- 40 zugeordnete GPX-Wandertracks
-- PWA-Manifest und App-Icons
-- mobile-first Leaflet-Karte mit Bottom-Sheet UX
+- 40 GPX-Wandertracks
+- 39 KML-Anfahrtsrouten
+- Leaflet-Karte mit Satellitenansicht
+- Favoriten im lokalen Gerätespeicher
+- PWA-Manifest + iOS-Icon
 
-## Datenregel
-Koordinaten stammen nur aus der Master-Excel bzw. aus den gelieferten KML/GPX-Dateien. Keine Koordinaten wurden erfunden.
+## GitHub Pages
+Alle Dateien direkt in den Root des Repositories laden. `index.html` muss im Root liegen.
