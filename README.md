@@ -11,3 +11,6 @@ V1.5 Schwerpunkt:
 - Service-Worker Cache v1.5
 
 Upload zu GitHub Pages: entpackten Inhalt hochladen, nicht die ZIP-Datei.
+
+
+V1.6: Kartenmodi OSM hell/Dark/Topo/Satellit, Anfahrts-Heatmap, optionaler Concelhos-Layer über geoBoundaries, bereinigter Ampel-Statusfilter.
