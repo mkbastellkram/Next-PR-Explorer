@@ -1,25 +1,36 @@
 <!doctype html><html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-<title>PR Explorer Madeira · V1.6</title>
+<title>PR Explorer Madeira · V1.7</title>
 <meta name="theme-color" content="#061616"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="PR Explorer">
 <link rel="apple-touch-icon" href="./icon-180.png"><link rel="manifest" href="./manifest.webmanifest">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="./style.css">
 </head><body>
-<div id="app">
+<div id="app" data-base="sat">
   <div id="map"></div>
   <div class="vignette"></div>
 
-  <header id="hero" class="hero">
+  <header id="hero" class="hero hiddenHero" aria-hidden="true">
     <div><div class="kicker">MADEIRA</div><h1>PR Explorer</h1></div>
-    <button id="viewBtn" class="round glass" aria-label="Ansicht"><span>⌕</span></button>
-    <button id="filterBtn" class="round glass" aria-label="Filter"><span>☷</span></button>
   </header>
 
+  <div id="spatialTop" class="spatialTop">
+    <div class="controlPill glass leftPill">
+      <button id="viewBtn" aria-label="Ansicht">⌕</button>
+      <button id="calendarBtn" aria-label="Reisezeitraum">▦</button>
+      <button id="heatBtn" aria-label="Heatmap">♨</button>
+      <button id="infoBtn" aria-label="Info">ⓘ</button>
+    </div>
+    <div class="controlPill glass rightPill">
+      <button id="settingsBtn" aria-label="Karteneinstellungen">⚙</button>
+      <button id="shareBtn" aria-label="Teilen">⇧</button>
+    </div>
+  </div>
+
   <div id="viewMenu" class="top-menu glass hidden">
-    <small>Ansicht</small>
+    <small>Zoom</small>
     <button id="locateBtn"><span>⌖</span> Aktueller Standort</button>
-    <button id="fitAllBtn"><span>▢</span> Alle PR anzeigen</button>
+    <button id="fitAllBtn"><span>▢</span> Gesamte Route</button>
     <button id="fullscreenBtn"><span>⛶</span> Vollbild-Ansicht</button>
   </div>
 
@@ -31,6 +42,13 @@
     <div id="statusFilters" class="statusFilters"></div>
     <button id="resetFilters" class="menuAction">Filter zurücksetzen</button>
   </div>
+
+  <section id="toolSheet" class="toolSheet hidden">
+    <button id="toolBack" class="toolBack">‹</button>
+    <button id="toolClose" class="toolClose">×</button>
+    <h2 id="toolTitle">Werkzeug</h2>
+    <div id="toolContent"></div>
+  </section>
 
   <section id="panel" class="panel glass hidden">
     <div class="panelBar"></div>
@@ -52,6 +70,7 @@
   </nav>
   <button id="navOrb" class="navOrb hidden"><span>▱</span></button>
   <button id="fullscreenClose" class="fullscreenClose glass hidden">×</button>
+  <div id="versionBadge">v1.7 · 22.05.2026</div>
   <div id="toast"></div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
