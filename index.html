@@ -9,9 +9,49 @@
 <div id="app">
   <div id="map"></div>
   <div class="vignette"></div>
-  <header class="hero"><div class="kicker">MADEIRA</div><h1>PR Explorer</h1><button id="locateBtn" class="round glass" aria-label="Position"><span>⌖</span></button></header>
-  <nav class="nav glass"><button data-tab="overview" class="active"><span>⌂</span>Übersicht</button><button data-tab="routes"><span>⌁</span>Routen</button><button data-tab="favorites"><span>★</span>Favoriten</button><button data-tab="layers"><span>▥</span>Layer</button></nav>
-  <section id="sheet" class="sheet"><div class="grab"></div><div id="content"></div></section>
+
+  <header id="hero" class="hero">
+    <div><div class="kicker">MADEIRA</div><h1>PR Explorer</h1></div>
+    <button id="viewBtn" class="round glass" aria-label="Ansicht"><span>⌕</span></button>
+    <button id="filterBtn" class="round glass" aria-label="Filter"><span>☷</span></button>
+  </header>
+
+  <div id="viewMenu" class="top-menu glass hidden">
+    <small>Ansicht</small>
+    <button id="locateBtn"><span>⌖</span> Aktueller Standort</button>
+    <button id="fitAllBtn"><span>▢</span> Alle PR anzeigen</button>
+    <button id="fullscreenBtn"><span>⛶</span> Vollbild-Ansicht</button>
+  </div>
+
+  <div id="filterMenu" class="top-menu right glass hidden">
+    <small>Filter</small>
+    <div class="filterTitle">Region</div>
+    <div id="regionFilters" class="filterGrid"></div>
+    <div class="filterTitle">Status</div>
+    <div id="statusFilters" class="statusFilters"></div>
+    <button id="resetFilters" class="menuAction">Filter zurücksetzen</button>
+  </div>
+
+  <section id="panel" class="panel glass hidden">
+    <div class="panelBar"></div>
+    <div id="panelContent"></div>
+  </section>
+
+  <section id="detailPanel" class="detailPanel glass hidden">
+    <button id="detailClose" class="miniClose">×</button>
+    <div class="panelBar"></div>
+    <div id="detailContent"></div>
+  </section>
+
+  <nav id="bottomNav" class="bottomNav glass">
+    <button data-tab="overview" class="active"><span>⌂</span><b>Übersicht</b></button>
+    <button data-tab="journal"><span>▤</span><b>Journal</b></button>
+    <button data-tab="map"><span>▱</span><b>Karte</b></button>
+    <button data-tab="trips"><span>◉</span><b>Reisen</b></button>
+    <button data-tab="options"><span>☷</span><b>Optionen</b></button>
+  </nav>
+  <button id="navOrb" class="navOrb hidden"><span>▱</span></button>
+  <button id="fullscreenClose" class="fullscreenClose glass hidden">×</button>
   <div id="toast"></div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
